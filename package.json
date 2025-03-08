@@ -7,22 +7,62 @@
         "package": "node scripts/package.js",
         "release": "npm run build && npm run package",
         "watch": "webpack --mode development --watch",
-        "format": "prettier --write \"src/**/*.js\" \"public/**/*.html\""
+        "format": "prettier --write \"src/**/*.js\" \"public/**/*.html\"",
+        "semantic-release": "semantic-release",
+        "commit": "cz"
     },
     "devDependencies": {
         "@babel/core": "^7.26.9",
         "@babel/preset-env": "^7.26.9",
+        "@commitlint/cli": "^19.5.0",
+        "@commitlint/config-conventional": "^19.5.0",
+        "@commitlint/cz-commitlint": "^19.5.0",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/exec": "^7.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^11.0.1",
+        "@semantic-release/npm": "^12.0.1",
         "archiver": "^7.0.1",
         "autoprefixer": "^10.4.20",
         "babel-loader": "^10.0.0",
+        "commitizen": "^4.3.1",
         "copy-webpack-plugin": "^12.0.2",
         "css-loader": "^7.1.2",
         "postcss": "^8.5.3",
         "postcss-loader": "^8.1.1",
         "prettier": "^3.5.3",
+        "semantic-release": "^24.2.3",
         "style-loader": "^4.0.0",
         "tailwindcss": "^3.4.17",
         "webpack": "^5.90.1",
         "webpack-cli": "^5.1.4"
+    },
+    "config": {
+        "commitizen": {
+            "path": "@commitlint/cz-commitlint"
+        }
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            [
+                "@semantic-release/commit-analyzer",
+                {
+                    "preset": "conventionalcommits"
+                }
+            ],
+            "@semantic-release/release-notes-generator",
+            "@semantic-release/changelog",
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": false
+                }
+            ],
+            "@semantic-release/git",
+            "@semantic-release/github"
+        ]
     }
 }
