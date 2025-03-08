@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -36,6 +37,12 @@ module.exports = {
                 { from: "public", to: "." },
                 { from: "manifest.json", to: "." },
             ],
+        }),
+        new ESLintPlugin({
+            eslintPath: "eslint/use-at-your-own-risk", 
+            extensions: ["js"],
+            exclude: "node_modules",
+            failOnError: process.env.NODE_ENV === "production",
         }),
     ],
     devtool: "cheap-module-source-map",

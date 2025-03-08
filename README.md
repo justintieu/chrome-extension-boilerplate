@@ -5,13 +5,14 @@ A modern foundation for Chrome extensions with Webpack 5, Tailwind CSS 3, and Ma
 ## Features
 
 - 🛠 Webpack 5 + Babel
-- 🎨 Tailwind CSS + PostCSS
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) + PostCSS
 - 📦 Manifest V3 Ready
 - 📄 HTML/JS/CSS Hot Reloading
 - ⚡ Production Optimization
 - 📦 Auto ZIP Packaging
-- 📝 Pre-configured Prettier
+- 📝 Code Formatter with [Prettier](https://prettier.io/)
 - 🎁 Automatic changelog generation with Semantic Release
+- 📏 Linter with [ESLint](https://eslint.org/) 
 
 ## Requirements
 

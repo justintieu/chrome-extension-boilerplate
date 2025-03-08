@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector("#something-awesome-button")
         .addEventListener("click", (e) => {
             e.preventDefault();
+
             alert("Something awesome ✨");
         });
 });
