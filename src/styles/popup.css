@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup-container {
+    width: 300px;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.popup-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.popup-content {
+    padding: 15px;
+}
+
+.popup-content p {
+    margin-bottom: 10px;
+}
+
+.popup-footer {
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid #eee;
+}
+
+#options-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#options-button:hover {
+    background-color: #367c39;
+}
+
+#feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+#feature-list li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#feature-list li:last-child {
+    border-bottom: none;
+}
+

@@ -1,0 +1,28 @@
+{
+    "name": "chrome-extension-boilerplate",
+    "version": "1.0.0",
+    "description": "Chrome Extension Boilerplate",
+    "scripts": {
+        "build": "webpack --mode production",
+        "package": "node scripts/package.js",
+        "release": "npm run build && npm run package",
+        "watch": "webpack --mode development --watch",
+        "format": "prettier --write \"src/**/*.js\" \"public/**/*.html\""
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.9",
+        "@babel/preset-env": "^7.26.9",
+        "archiver": "^7.0.1",
+        "autoprefixer": "^10.4.20",
+        "babel-loader": "^10.0.0",
+        "copy-webpack-plugin": "^12.0.2",
+        "css-loader": "^7.1.2",
+        "postcss": "^8.5.3",
+        "postcss-loader": "^8.1.1",
+        "prettier": "^3.5.3",
+        "style-loader": "^4.0.0",
+        "tailwindcss": "^3.4.17",
+        "webpack": "^5.90.1",
+        "webpack-cli": "^5.1.4"
+    }
+}
