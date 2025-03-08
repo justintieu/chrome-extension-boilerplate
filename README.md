@@ -11,6 +11,7 @@ A modern foundation for Chrome extensions with Webpack 5, Tailwind CSS 3, and Ma
 - ⚡ Production Optimization
 - 📦 Auto ZIP Packaging
 - 📝 Pre-configured Prettier
+- 🎁 Automatic changelog generation with Semantic Release
 
 ## Requirements
 
