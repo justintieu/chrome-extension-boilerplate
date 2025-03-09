@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/justintieu/chrome-extension-boilerplate/compare/v1.0.0...v1.1.0) (2025-03-09)
+
+
+### Features
+
+* added demo images for chrome extension boilerplate ([93e881b](https://github.com/justintieu/chrome-extension-boilerplate/commit/93e881b38c142ab9444f572e39c093c0baf3dbe8))
+
 # 1.0.0 (2025-03-08)
 
 
