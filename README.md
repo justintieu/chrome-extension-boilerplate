@@ -12,7 +12,21 @@ A modern foundation for Chrome extensions with Webpack 5, Tailwind CSS 3, and Ma
 - 📦 Auto ZIP Packaging
 - 📝 Code Formatter with [Prettier](https://prettier.io/)
 - 🎁 Automatic changelog generation with Semantic Release
-- 📏 Linter with [ESLint](https://eslint.org/) 
+- 📏 Linter with [ESLint](https://eslint.org/)
+
+## Demo
+
+| Content Script Loaded                                                  | Options UI                                       |
+| ---------------------------------------------------------------------- | ------------------------------------------------ |
+| ![Content Script Loaded](demo/assets/images/content-script-loaded.png) | ![Options UI](demo/assets/images/options-ui.png) |
+
+| Popup UI (Status tab)                                                | Popup UI (Actions tab)                                                 |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![Popup UI (Status tab)](demo/assets/images/popup-ui-status-tab.png) | ![Popup UI (Actions tab)](demo/assets/images/popup-ui-actions-tab.png) |
+
+| Options UI in Popup                                        | Options UI in Popup (Saved)                                              |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------ |
+| ![Settings UI](demo/assets/images/options-ui-in-popup.png) | ![Settings UI (Saved)](demo/assets/images/options-ui-in-popup-saved.png) |
 
 ## Requirements
 
