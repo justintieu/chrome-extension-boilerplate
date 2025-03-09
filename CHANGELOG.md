@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/justintieu/chrome-extension-boilerplate/compare/v1.1.0...v1.2.0) (2025-03-09)
+
+
+### Bug Fixes
+
+* added more files to scope of prettier formatting ([6cf8f20](https://github.com/justintieu/chrome-extension-boilerplate/commit/6cf8f209518813086440989d37897212e6da3d67))
+
+
+### Features
+
+* added support to sync the version of manifest.json with package.json ([82e634b](https://github.com/justintieu/chrome-extension-boilerplate/commit/82e634b40009e1b3b4e284a1a2a944df010cb1d9))
+
 # [1.1.0](https://github.com/justintieu/chrome-extension-boilerplate/compare/v1.0.0...v1.1.0) (2025-03-09)
 
 
