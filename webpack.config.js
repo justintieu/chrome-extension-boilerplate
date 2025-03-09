@@ -39,7 +39,7 @@ module.exports = {
             ],
         }),
         new ESLintPlugin({
-            eslintPath: "eslint/use-at-your-own-risk", 
+            eslintPath: "eslint/use-at-your-own-risk",
             extensions: ["js"],
             exclude: "node_modules",
             failOnError: process.env.NODE_ENV === "production",

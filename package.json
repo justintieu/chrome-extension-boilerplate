@@ -9,7 +9,7 @@
         "package": "node scripts/package.mjs",
         "release": "npm run build && npm run package",
         "watch": "webpack --mode development --watch",
-        "format": "prettier --write \"src/**/*.js\" \"public/**/*.html\"",
+        "format": "prettier --write \"./**/*.js\" \"public/**/*.html\" \"./**/*.json\" \"./**/*.mjs\"",
         "semantic-release": "semantic-release",
         "commit": "cz"
     },
