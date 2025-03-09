@@ -14,7 +14,8 @@
         "commit": "cz"
     },
     "dependencies": {
-        "archiver": "^7.0.1"
+        "archiver": "^7.0.1",
+        "dotenv": "^16.4.7"
     },
     "devDependencies": {
         "@babel/core": "^7.26.9",
@@ -73,7 +74,13 @@
                 }
             ],
             "@semantic-release/git",
-            "@semantic-release/github"
+            "@semantic-release/github",
+            [
+                "@semantic-release/exec",
+                {
+                    "prepareCmd": "node ./scripts/updateManifest.mjs"
+                }
+            ]
         ]
     }
 }
